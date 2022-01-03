@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- stylesheets and fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="doart-mobile-header">
+        <a href="#" class="d-block p-2 py-3 link-dark text-decoration-none">
+            <img src="assets/img/Logo.svg" alt="" class="w-100">
+        </a>
+        <!-- open -->
+        <div class="d-block hamburger-container"> 
+            <span class="doart-menu-hamburger"></span>
+            <span class="doart-menu-hamburger"></span>
+            <span class="doart-menu-hamburger"></span>
+        </div>    
+    </div>
+    <div class="doart-content d-flex">
+        
+        
+        <!-- sidebar menu-->
+        <div class="d-flex flex-column flex-shrink-0 doart-sidebar">            
+            <a href="#" class="d-block p-2 py-3 link-dark text-decoration-none">
+                <img src="assets/img/Logo.svg" alt="" class="w-100">
+            </a>
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-4" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <img src="assets/img/Header/dashboard.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html" class="nav-link  py-4" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                        <img src="assets/img/Header/products.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link py-4" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                        <img src="assets/img/Header/orders.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="nav-link py-4" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Projects">
+                        <img src="assets/img/Header/projects.svg" alt="">
+                    </a>
+                </li>
+            </ul>           
+        </div>
+        <!-- sidebar content -->
+        <div class="flex-shrink-0 content-sidebar active">
+            <div class="visible-xs">
+                <ul class="list-unstyled ps-0">
+                    <li class="py-1">
+                        <a href="#" class="d-block pb-3 link-dark text-decoration-none">
+                            <img src="assets/img/Logo.svg" alt="" class="">
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <button class="px-0 btn-toggle align-items-center rounded collapsed fz-10 fw-500 text-light" data-bs-toggle="collapse" data-bs-target="#dashboard-mobile-collapse" aria-expanded="true"><img src="assets/img/Header/dashboard.svg" alt="" class="me-3">Dashboard</button>
+                        <div class="collapse" id="dashboard-mobile-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="index.html" class=" fz-10 fw-500 text-light">Overview</a></li>
+                                <li><a href="#" class=" fz-10 fw-500 text-light">Sales</a></li>
+                                <li><a href="#" class=" fz-10 fw-500 text-light">Orders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="py-1">
+                        <button class="px-0 btn-toggle align-items-center rounded collapsed fz-10 fw-500 text-light" data-bs-toggle="collapse" data-bs-target="#product-mobile-collapse" aria-expanded="true"><img src="assets/img/Header/products.svg" alt="" class="me-3">Products</button>
+                        <div class="collapse" id="product-mobile-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="product.html" class=" fz-10 fw-500 text-light">All Products</a></li>
+                                <li><a href="#" class=" fz-10 fw-500 text-light">Active Products</a></li>
+                                <li><a href="#" class=" fz-10 fw-500 text-light">In Moderation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="py-1">
+                        <button class="px-0 btn-toggle align-items-center rounded collapsed fz-10 fw-500 text-light" data-bs-toggle="collapse" data-bs-target="#order-mobile-collapse" aria-expanded="true"><img src="assets/img/Header/orders.svg" alt="" class="me-3">Orders</button>
+                        <div class="collapse" id="order-mobile-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="orders.html" class="fz-10 fw-500 text-light">All Orders</a></li>
+                                <li><a href="#" class="fz-10 fw-500 text-light">Delivered</a></li>
+                                <li><a href="#" class="fz-10 fw-500 text-light">Custom Orders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="py-1">
+                        <button class="px-0 btn-toggle align-items-center rounded collapsed fz-10 fw-500 text-light" data-bs-toggle="collapse" data-bs-target="#project-mobile-collapse" aria-expanded="true"><img src="assets/img/Header/projects.svg" alt="" class="me-3">Projects</button>
+                        <div class="collapse" id="project-mobile-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="projects.html" class="fz-10 fw-500 text-light">All Projects</a></li>
+                                <li><a href="#" class="fz-10 fw-500 text-light">In Progress</a></li>
+                                <li><a href="#" class="fz-10 fw-500 text-light">Completed</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="list-unstyled ps-0 hidden-xs">
+                <li class="py-1">
+                    <span class="toggle-menu-button float-right">
+                        <img src="assets/img/Header/sidebar-toggle-icon.svg" alt="">
+                    </span>
+                    <p class="side-menu-item-title mb-3 fz-18 text-light">Dashboard</p>
+                </li>
+                <li class="py-1">
+                    <button class="px-0 btn-toggle align-items-center rounded collapsed fz-10 fw-500 text-light" data-bs-toggle="collapse" data-bs-target="#overview-collapse" aria-expanded="true">Overview</button>
+                    <div class="collapse" id="overview-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class=" fz-10 fw-500 text-light">Sales</a></li>
+                            <li><a href="#" class=" fz-10 fw-500 text-light">Orders</a></li>
+                            <li><a href="#" class=" fz-10 fw-500 text-light">Products</a></li>
+                            <li><a href="#" class=" fz-10 fw-500 text-light">Projects</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar content end -->
+        <!-- sidebar men end -->
+
+
+
+        <!-- Middle content -->
+        <div class="doart-middle-content">
+            <!-- topbar -->
+            <div class="menu-topbar d-flex">
+                <div class="search-box">
+                    <input type="search" class="doart-input form-control fz-14" placeholder="Search" />
+                </div>
+                <div class="topbar-icons align-self-center">
+                    <div class="widget-box close-mobile-setting align-self-center">
+                        <button><img src="assets/img/setting-dark-icon.svg" /></button>
+                    </div>
+                    <div class="widget-box align-self-center">
+                        <div class="dropdown">
+                            <button class="dropbtn"><img src="assets/img/Header/inbox.svg" /></button>
+                            <div class="dropdown-content">
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum sent you a message!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-box align-self-center">
+                        <div class="dropdown">
+                            <button><img src="assets/img/Header/notification.svg" /></button>
+                            <div class="dropdown-content">
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                                <a class="fz-12 color-grey fw-500" href="#"><img src="assets/img/Header/avtar.png" class="rounded-circle"> lorem ipsum shared your post</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avtar-rounded align-self-center">
+                        <img src="assets/img/Header/avtar.png" class="rounded-circle">
+                    </div>
+                    <div class="topbar-toggle-menu align-self-center">
+                        <button class="toggle-btn"><i class="fa fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- topbar -->
+
+            <!-- middle data -->
+            <div class="doart-center-data">
+                <!-- middle heading -->
+                <div class="doart-center-header row">
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <h1 class="doart-title align-self-center"> Dashboard </h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <div class="doart-date-filters row justify-content-end">
+                            <div class="col-xl-3 col-lg-3 col-sm-6 col-12">
+                                <input class="table-filter-date-range form-control fz-12 fw-500" type="date" value="2021-01-01" min="2021-01-01" max="2030-01-01" />
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-sm-6 col-12">
+                                <div class="select-wrapper">
+                                    <select class="select fz-12">
+                                <option value="value1">Last 7 Days</option>
+                                <option value="value1">Last 30 days</option>
+                                <option value="value2">Today</option>
+                                <option value="value3">Yesterday</option>
+                            </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- middle heading -->
+
+                <!-- dashboard cards -->
+                <div class="dashboard-cards">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Average Revenue / Day</p>
+                                <h2 class="fz-24 fw-800">$635.45 <span class="fz-14 fw-400"><img
+                                            src="assets/img/Dashboard/green-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Average Revenue / Day</p>
+                                <h2 class="fz-24 fw-800">$67.49 <span class="fz-14 fw-400"><img
+                                            src="assets/img/Dashboard/green-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Refunds</p>
+                                <h2 class="fz-24 fw-800">-$145.45 <span class="fz-14 fw-400 red-text"><img
+                                            src="assets/img/Dashboard/red-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Recurring Order Count</p>
+                                <h2 class="fz-24 fw-800">259<span class="fz-14 fw-400"><img
+                                            src="assets/img/Dashboard/green-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Recurring Order Count</p>
+                                <h2 class="fz-24 fw-800">$17,601.91 <span class="fz-14 fw-400 red-text"><img
+                                            src="assets/img/Dashboard/red-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card-data text-center">
+                                <p class="fz-14 fw-500">Recurring Sales Contribution</p>
+                                <h2 class="fz-24 fw-800">100% <span class="fz-14 fw-400 red-text"><img
+                                            src="assets/img/Dashboard/red-indicator.svg"> 4.07%</span></h2>
+                                <div class="doart-tooltip">
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"><img src="assets/img/Dashboard/info-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard cards -->
+                <!-- dashboard chart -->
+                <div class="dashboard-chart">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="sales-chart-main-div">
+                                <div class="main-box d-inline-block">
+                                    <div class="box-one d-inline-block">
+                                        <p class="title fz-14 fw-400 ">Net Sales </p><span class="info-icon tooltip">
+                                            <img src="assets/img/Dashboard/info-icon.svg">
+                                            <p class="tooltiptext fz-10">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        </span>
+                                        <p class="doart-subtitle fw-600">$17,446.10 <span class="text-progress fz-14 fw-400"><img src="assets/img/Dashboard/green-indicator.svg">4.07%</span></p>
+                                    </div>
+                                    <div class="box-two d-inline-block">
+                                        <p class="title fz-14 fw-400 ">Orders </p><span class="info-icon tooltip">
+                                            <img src="assets/img/Dashboard/info-icon.svg">
+                                            <p class="tooltiptext fz-10">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        </span>
+                                        <p class="doart-subtitle fw-600">260<span class="text-progress fz-14 fw-400"><img src="assets/img/Dashboard/green-indicator.svg">4.07%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="chart2">
+                                    <Chart options={this.state.options} series={this.state.series} type="line" height={350} />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="compare-order-section">
+                                <div class="compare-order-topbar row">
+                                    <div class="col-lg-8 col-sm-6 col-6">
+                                        <h4 class="doart-subtitle">Compare Orders</h4>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 col-6 text-end">
+                                        <a type="button"><img src="./assets/img/Dashboard/compare-order-menu.svg" alt="compare-order-menu"></a>
+                                    </div>
+                                </div>
+                                <div class="compare-order-days row">
+                                    <div class="col-lg-6 col-sm-6 col-6">
+                                        <div class="yesterday-orders">
+                                            <p class="day-title fz-14 fw-400">Yesterday</p>
+                                            <h5 class="total-order fz-18 fw-600">$544.49</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-6">
+                                        <div class="today-orders">
+                                            <p class="day-title fz-14 fw-400">Today</p>
+                                            <h5 class="total-order fz-18 fw-600">$603.20 <span class=""><img src="./assets/img/Dashboard/green-indicator.svg" alt="green-indicator"></span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chart"></div>
+                                <div class="compare-order-golden-line"></div>
+                                <button class="golden-background-button fz-12 fw-600">View Full Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard chart end -->
+                <!-- sales goal and merge activity -->
+                <div class="activity-and-sales">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 col-12">
+                            <div class="merge-activity">
+                                <!-- sales goal -->
+                                <div class="sales-progress bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-8 col-8">
+                                            <h4 class="fz-18 fw-700">Sales Goal <span class="fw-400 fz-14 color-grey">(Nov 2021)</span></h4>
+                                            <p class="fz-14 fw-500">Achieved <strong class="color-golden">65%</strong> of $3,000</p>
+
+                                        </div>
+                                        <div class="col-lg-6 col-sm-4 col-4 edit-re-button align-self-center text-end">
+                                            <a class="fz-12 fw-600 golden-border-button">Edit</a>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar color-golden" style="width:70%"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- sales goal end -->
+
+
+                            <!-- online store rate -->
+                            <div class="online-conversion">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-6">
+                                        <p class="fz-14 fw-400 color-grey store-rate-convesrion">Online Store Conversion Rate
+                                        </p>
+                                        <h4 class="fz-18 fw-600">38% <span class="fz-14 fw-400 green-text"><img
+                                                    src="assets/img/Dashboard/green-indicator.svg"> 4.07%</span></h4>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-6 edit-re-button align-self-center text-end">
+                                        <a class="fz-12 fw-600 golden-border-button">View Report</a>
+                                    </div>
+                                </div>
+
+                                <div class="golden-hr"></div>
+
+                                <div class="conversion-funnel">
+                                    <h3 class="fz-14 fw-600">Conversion Funnel</h3>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <div class="conversion-text">
+                                                <h4 class="fz-14 fw-500">Added to Cart</h4>
+                                                <p class="fz-12 fw-500 color-grey">23 Sessions</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 align-self-center">
+                                            <div class="conversion-percent align-self-center">
+                                                <p class="fz-14 fw-600 text-end">28.00%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <div class="conversion-text">
+                                                <h4 class="fz-14 fw-500">Reached Checkout</h4>
+                                                <p class="fz-12 fw-500 color-grey">52 Sessions</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 align-self-center">
+                                            <div class="conversion-percent align-self-center">
+                                                <p class="fz-14 fw-600 text-end">72.00%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <div class="conversion-text">
+                                                <h4 class="fz-14 fw-500">Sessions Converted</h4>
+                                                <p class="fz-12 fw-500 color-grey">21 Sessions</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 align-self-center">
+                                            <div class="conversion-percent align-self-center">
+                                                <p class="fz-14 fw-600 text-end">33.00%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- online store rate end-->
+                        </div>
+
+
+                        <!-- order activity table  -->
+                        <div class="col-lg-6 col-sm-6 col-12">
+                            <div class="order-activity-section bg-white">
+                                <h4 class="doart-subtitle fw-700 fz-18">Activity</h4>
+                                <div class="scrollbar" id="scrollbar-style">
+                                    <div class="activity-table row justify-content-between">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> Just Now </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> Just Now </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                    <div class="golden-border"></div>
+                                    <div class="activity-table row">
+                                        <div class="col-lg-6 col-sm-6 col-6">
+                                            <p class="text-ellipses order-desc fw-400 fz-12">Order No. <span class="order-number fw-600">#93011113</span> was fully paid by <b>
+                                                    John Doe </b></p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-6 text-end">
+                                            <p class="color-grey fw-500 fz-10"> 6 Hours ago </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- order activity table  -->
+                    </div>
+                </div>
+
+                <!-- sales goal and merge activity -->
+
+                <!-- order list table  -->
+                <!-- order list table  -->
+                <div class="do-art-main-table do-art-box-shadow">
+                    <!-- Table Main Header Start -->
+                    <div class="order-tbl-header row">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12 align-self-center">
+                            <div class="row mb-md-3">
+                                <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12 align-self-center mob-space-20">
+                                    <h4 class="fw-800 fz-18 mr-30 ">Orders</h4>
+                                </div>
+                                <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12 mob-space-20">
+                                    <div class="search-box">
+                                        <input type="search" class="doart-input form-control fz-14" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12 align-self-center">
+                            <div class="doart-date-filters row justify-content-end">
+                                <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 col-xs-12 col-12 mb-md-3 mob-space-20">
+                                    <input class="table-filter-date-range order-date-filter form-control fz-12 fw-500 mr-20" type="date" value="2021-01-01" min="2021-01-01" max="2030-01-01" />
+                                </div>
+                                <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 col-xs-12 col-12 mb-md-3 mob-space-20">
+                                    <div class="select-wrapper order-drop-down license mr-20">
+                                        <select class="form-select fz-12 fw-500 color-black">
+                                        <option selected>Licence</option>
+                                        <option value="1">Last 30 days</option>
+                                        <option value="2">Today</option>
+                                        <option value="3">Yesterday</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 col-xs-12 col-12 mob-space-20">
+                                    <div class="select-wrapper order-drop-down delivery-status">
+                                        <select class="form-select fz-12 fw-500 color-black">
+                                        <option selected>Delivery Status</option>
+                                        <option value="1">Pending</option>
+                                        <option value="2">On Hold</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Main Header End -->
+
+                    <!-- Main Table Content Start -->
+                    <div class="table-content table-responsive">
+                        <table class="table file-assets-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" class="checkAll" name="checkAll">
+                                    </th>
+                                    <th class="fz-12 fw-600">Product Name</th>
+                                    <th class="fz-12 fw-600">Licence</th>
+                                    <th class="fz-12 fw-600">Customer</th>
+                                    <th class="fz-12 fw-600">Orders</th>
+                                    <th class="fz-12 fw-600">Refund</th>
+                                    <th class="fz-12 fw-600">Delivery Status</th>
+                                    <th class="fz-12 fw-600">Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="item[]" value="1">
+                                    </td>
+
+                                    <td>
+                                        <p class="text-ellipses fz-12 fw-600">
+                                            Product 1 lorem ipsum dolor sit amet
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">#11281841</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">39</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600"> 23</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">23</p>
+                                    </td>
+                                    <td>
+                                        <span class="green-pill fz-10 fw-500">In Progress</span>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">$288</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="item[]" value="1">
+                                    </td>
+
+                                    <td>
+                                        <p class="text-ellipses fz-12 fw-600">
+                                            Product 1 lorem ipsum dolor sit amet
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">#11281841</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">39</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600"> 23</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">23</p>
+                                    </td>
+                                    <td>
+                                        <span class="yellow-pill fz-10 fw-500">Pending</span>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">$288</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="item[]" value="1">
+                                    </td>
+
+                                    <td>
+                                        <p class="text-ellipses fz-12 fw-600">
+                                            Product 1 lorem ipsum dolor sit amet
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">#11281841</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">39</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600"> 23</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">23</p>
+                                    </td>
+                                    <td>
+                                        <span class="green-pill fz-10 fw-500">Delivered</span>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">$288</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="item[]" value="1">
+                                    </td>
+
+                                    <td>
+                                        <p class="text-ellipses fz-12 fw-600">
+                                            Product 1 lorem ipsum dolor sit amet
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">#11281841</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">39</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600"> 23</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">23</p>
+                                    </td>
+                                    <td>
+                                        <span class="yellow-pill fz-10 fw-500">Pending</span>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">$288</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="item[]" value="1">
+                                    </td>
+
+                                    <td>
+                                        <p class="text-ellipses fz-12 fw-600">
+                                            Product 1 lorem ipsum dolor sit amet
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">#11281841</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">39</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600"> 23</p>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">23</p>
+                                    </td>
+                                    <td>
+                                        <span class="red-pill fz-10 fw-500">Cancelled</span>
+                                    </td>
+                                    <td>
+                                        <p class="fz-12 fw-600">$288</p>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Main Table Content End -->
+
+                    <!-- Main Table Pagination Start -->
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12 col-12 mob-space-20">
+                            <p class="fw-400 fz-12 total-order-title color-grey">Showing 01 - 05 of 66 Orders</p>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-xs-12 col-12">
+                            <div class="row justify-content-end">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 g-0 mob-space-20">
+                                    <div class="d-flex flex-nowrap align-items-center">
+                                        <p class="fz-12 fw-400 total-order-title color-grey">Results per page:</p>
+                                        <select class="form-select pagination-custom-select fz-12 fw-600">
+                                        <option selected value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12 g-0 mob-space-20">
+                                    <div class="custom-pagination">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link fz-12 fw-500" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link fz-12 fw-500" href="#">1</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link fz-12 fw-500" href="#">2</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link fz-12 fw-500" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link fz-12 fw-500" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Table Pagination End -->
+                </div>
+                <!-- order list table  -->
+            </div>
+
+            <!-- footer -->
+            <footer class="w-100 border-top p-4 d-flex justify-content-between flex-wrap">
+                <div class="copyright-text align-self-center"><p class="fz-12 fw-500">2022 © Doart Seller Account - doart.in</p></div>
+                <ul class="footer-menu align-self-center list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="fz-12 fw-500">About</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="fz-12 fw-500">Support</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="fz-12 fw-500">Purchase</a>
+                    </li>
+                </ul>
+            </footer>
+            <!-- footer end -->
+        </div>
+
+        
+    </div>
+    <!-- order list table end -->
+
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- scripts -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>

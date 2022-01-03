@@ -1,0 +1,985 @@
+/* ****************************************************** Project Page Start ****************************************************************** */
+
+.projects-center-data {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* creative brief*/
+
+.design-custom-work h3,
+.specification h3 {
+  padding-bottom: 10px;
+}
+
+.artwork-type h4 {
+  padding-bottom: 5px;
+}
+
+.artwork-type p {
+  padding-bottom: 20px;
+}
+
+.specification p {
+  padding-bottom: 10px;
+}
+
+.specification p:last-child {
+  padding-bottom: 0;
+}
+
+.creative-brief .golden-border-button {
+  margin-right: 8px;
+  padding: 11px;
+}
+
+.specification .golden-background-button {
+  padding: 12px 20px;
+}
+
+/* creative brief end*/
+
+/*files tab*/
+
+.files .table-content td p {
+  padding: 9px 0;
+}
+
+.table-content th {
+  padding-bottom: 15px;
+}
+
+.table> :not(:first-child) {
+  border-top: 0;
+}
+
+.file-upload-btn {
+  text-align: right;
+}
+
+/*files tab end*/
+/*Mural tab */
+
+.material h3,
+.frame h3 {
+  padding-bottom: 5px;
+}
+
+.mural-width {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.mural-size-box {
+  margin: 20px 0 30px;
+}
+
+.mural-width label {
+  padding-bottom: 15px;
+}
+
+.mural-width input {
+  border: 1px solid #eee;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.mural-width select {
+  background-color: #eee;
+  margin-left: -56px;
+  border: 1px solid #eee;
+  height: 40px;
+  border-radius: 5px;
+  width: 70px;
+  padding-left: 10px;
+}
+
+.metal-print-box {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.metal-print-text {
+  padding: 20px;
+}
+
+.metal-hr {
+  margin: 15px 0;
+  border: 1px solid #ededed;
+}
+
+.basic-plan {
+  margin-bottom: 20px;
+}
+
+.basic-plan h4 {
+  padding-bottom: 10px;
+}
+
+.gold {
+  position: relative;
+}
+
+.gold span {
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  background-color: #b79b6c;
+  padding: 10px;
+  right: 0;
+  z-index: 1;
+  bottom: 0px;
+}
+
+.gold span::before {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #b79b6c;
+  transform: skewX(-20deg);
+  z-index: -1;
+}
+.width-box {
+	margin-right: 20px;
+}
+/*Mural tab end*/
+/*Frame tab*/
+
+.frame-box {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.natural-wooden {
+  padding: 20px;
+  width: 100%;
+}
+
+.wooden-hr {
+  border: 1px solid #ededed;
+  margin: 0 15px;
+}
+
+.wooden-paper {
+  width: 100%;
+}
+
+.wooden-frame h4 {
+  padding-bottom: 10px;
+}
+
+.wooden-frame p {
+  width: 211px;
+  padding-bottom: 15px;
+}
+
+.wooden-paper label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.wooden-paper .select {
+  border: 1px solid #eee;
+  box-shadow: none;
+}
+
+.wooden-paper-hr {
+  border-bottom: 1px solid #ededed;
+  margin: 20px 0;
+}
+
+.paper-checkout .golden-background-button {
+  padding: 11px 51px;
+}
+
+/*Frame tab end*/
+
+/*team tab*/
+
+.team .golden-border-button {
+  padding: 10px 22px;
+}
+
+.table-content td p {
+  padding: 9px 0;
+}
+
+.team-heading h3 {
+  padding-bottom: 7px;
+}
+
+.team .table-content th {
+  padding-bottom: 15px;
+}
+
+/*team tab end*/
+
+/*Billing tab*/
+.billing .doart-date-filters .table-filter-date-range,
+.billing .select-wrapper .select {
+  border: 1px solid #eee;
+}
+
+.billing .earning-section {
+  margin-bottom: 30px;
+}
+
+.earning-box {
+  border: 1px solid #eee;
+  padding: 28px 50px;
+  border-radius: 5px;
+}
+
+.earning-box p {
+  padding-bottom: 15px;
+}
+
+/*Billing tab end*/
+
+
+/*sketch tab*/
+.sketch h3 {
+  padding-bottom: 20px;
+}
+
+.sketch .media-upload-container {
+  border: 1px dashed #6A707E;
+  padding: 50px;
+  display: block;
+  border-radius: 4px;
+}
+
+.sketch .media-upload-container.media-img-container {
+  padding: 15px;
+}
+
+.sketch .media-upload-container .media-img-details img {
+  width: 50px;
+  height: 50px;
+}
+
+.sketch .media-upload-container .cancel-media-details, .sketch .media-upload-container .cancel-media-details.red, .sketch .media-upload-container .fa-redo {
+  width: 24px;
+  height: 24px;
+  background: #FFFAF2;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sketch .media-upload-container .fa-image {
+  padding: 15px;
+  border-radius: 4px;
+  background: #F6EDDC;
+  align-self: center;
+}
+
+.sketch .media-upload-container .fa-redo, .sketch .media-upload-container .cancel-media-details.red, .sketch .media-upload-container .fa-image.fail-upload {
+  background: #FAE7E7;
+}
+
+/*sketch tab end*/
+
+
+
+
+
+/*Reveiw tab*/
+
+.review .artist-detail {
+  width: 550px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.review td {
+  vertical-align: middle;
+}
+
+.review td img {
+  padding-right: 10px;
+}
+
+/*Reveiw tab end*/
+
+
+/*Inspiration tab*/
+.inspiration input {
+  padding: 15px 0 15px 30px;
+}
+
+.inspiration .input-first {
+  margin-bottom: 30px;
+}
+
+.approved-input {
+  margin-right: 30px;
+  width: 100%;
+}
+
+.jaguar-color-box {
+  background: #170222;
+  padding: 50px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.jaguar-box {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.jaguar-color-box.yellow-box {
+  background-color: #C39648;
+}
+
+.jaguar-color-box.blue-box {
+  background-color: #7AA1D9;
+}
+
+.jaguar-name {
+  padding: 20px;
+}
+
+.green-background-button {
+  background-color: #069D72;
+  color: #fff;
+  border: 1px solid #069D72;
+  padding: 11px 22px;
+  border-radius: 4px;
+}
+
+.green-background-button:hover {
+  background-color: #fff;
+  color: #069D72;
+}
+
+.grey-hr-inspiration {
+  border: 1px solid #EDEDED;
+  margin: 20px 0;
+}
+
+.form-control {
+  border: 1px solid #eee;
+}
+
+.form-control:focus {
+  border-color: #eee;
+  box-shadow: none;
+}
+
+.small-image-inspiration {
+  margin-top: 20px;
+}
+
+/*Inspiration tab end*/
+
+/*Deliverable tab*/
+.accordion-button:not(.collapsed) {
+  color: #171717;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button {
+  padding: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-header {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 19px;
+}
+
+.color-dark-blue {
+  color: #395BD3;
+  padding-left: 5px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.inbox-content h4 {
+  border-bottom: 1px solid #EEE;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.acc-bg {
+  margin-right: 10px;
+}
+
+.inbox-content p {
+  padding-bottom: 20px;
+}
+
+.accordion-body textarea {
+  font-size: 12px;
+  color: #6A707E;
+}
+
+.revision-charge select {
+  padding: 7px;
+  background-color: #eee;
+  margin-left: -56px;
+  border: 1px solid #EEE;
+  height: 42px;
+  border-radius: 5px;
+  width: 70px;
+  padding-left: 10px;
+}
+
+.offer-extra {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.revision-charge p, .eta-days p {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.revision-charge input, .eta-days input {
+  width: auto;
+}
+
+.hr-grey {
+  border: 1px solid #EEE;
+  margin: 20px 0;
+}
+
+.send-offer {
+  text-align: right;
+}
+
+/*Deliverable tab end*/
+
+/* Activity tab*/
+
+.project-activity-block .earning-box {
+  margin-bottom: 30px;
+  padding: 30px 65px;
+}
+
+.project-progress,
+.project-progress h4 {
+  margin-bottom: 30px;
+}
+
+.project-activity-header .select-wrapper .select {
+  border: 1px solid #eeeeee;
+  padding: 12px 60px 12px 12px;
+}
+
+.project-activity-header .yellow-pill {
+  padding: 9px 23px;
+}
+
+.project-activity-header .green-pill {
+  padding: 9px 11px;
+}
+
+/*progressbar*/
+[role="progressbar"] {
+  --percentage: var(--value);
+  --primary: #b79b6c;
+  --secondary: #eee;
+  --size: 150px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%),
+      var(--secondary) 0);
+  mask: radial-gradient(white 66%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 64%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+  color: var(--primary);
+}
+
+.project-progress {
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.member-activity-data {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.activity-progress-bar .progress {
+  width: 200px;
+}
+
+.team-activity-blocks .member-activity-data .activity-progress-bar,
+.team-activity-blocks h4 {
+  margin-bottom: 20px;
+}
+
+#AddProject .modal-dialog {
+  max-width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#AddProject .modal-body {
+  padding: 30px 24px;
+}
+.member-name-list {
+	padding-top: 20px;
+}
+#AddProject .grey-border-button {
+  margin-right: 20px;
+}
+
+.modal-member-detail {
+  margin-bottom: 12px;
+}
+.grey-border-button {
+	border: 1px solid #D0D5DD;
+	border-radius: 4px;
+	color: #171717;
+	padding: 11px 15px;
+	text-decoration: none;
+	transition: 0.3s all;
+	cursor: pointer;
+	background: #fff;
+}
+.grey-border-button:hover {
+  background-color: #D0D5DD;
+  color: #fff;
+}
+/*design custom checkbox*/
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #b79b6c;
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+
+.checkbox-container:hover input~.checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.checkbox-container input:checked~.checkmark {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.checkbox-container .checkmark::after {
+  left: 5px;
+  top: 0px;
+  width: 4px;
+  height: 10px;
+  border: solid #b79b6c;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*design custom checkbox*/
+
+.modal-team-image {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.modal-team-image img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.modal-team-image .middle-image {
+  position: absolute;
+  top: -5px;
+  left: 43%;
+  right: 50%;
+}
+
+.modal-team-image .first-image {
+  margin-right: 10px;
+}
+
+.modal-team-image .last-image {
+  margin-left: 10px;
+}
+
+/* Activity tab end*/
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .doart-inspiration .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .project-activity-header .text-end {
+    text-align: left !important;
+  }
+
+  .project-activity-header .for-mob p {
+    margin-bottom: 20px;
+  }
+
+  .inspiration-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .mural-width {
+    margin-right: 0;
+    display: block;
+  }
+
+  .mural-width input {
+    width: 100%;
+  }
+
+  .mural-size-box {
+    margin: 20px 0;
+  }
+
+  .mural-size-box .mural-width {
+    margin-bottom: 20px;
+  }
+
+  .mural-width select {
+    margin-left: -60px;
+  }
+
+  .inspiration-image img {
+    width: 100%;
+  }
+
+  .inspiration-image .small-image-inspiration img {
+    width: auto;
+  }
+
+  .small-image-inspiration img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .small-image-inspiration {
+    margin-bottom: 20px;
+  }
+
+  .approved-input {
+    margin-right: 10px;
+  }
+
+  .team-member-data {
+    margin-bottom: 20px;
+  }
+
+  .activity-progress-bar .progress {
+    width: 100% !important;
+  }
+
+  .activity-progress-bar h3 {
+    padding-bottom: 10px;
+  }
+
+  .mural-size-box .d-inline-block, .frame-box .d-flex {
+    display: block !important;
+  }
+
+  .frame-box .d-flex img {
+    width: 100%;
+  }
+
+  .wooden-frame p {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .project-tabs .nav-tabs .nav-item {
+    margin-right: 10px;
+  }
+
+  .wooden-hr {
+    margin: 15px 0;
+  }
+
+  /*deliverable*/
+  .offer-select {
+    flex-wrap: wrap;
+  }
+
+  .revision-charge input, .eta-days input {
+    width: 100%;
+  }
+
+  .revision-charge, .eta-days {
+    width: 45%;
+  }
+
+  .revision-charge p, .eta-days p {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  /*deliverable end*/
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+  .projects-center-data {
+    padding: 20px;
+  }
+
+  .project-tabs .nav-tabs .nav-item {
+    margin-right: auto;
+  }
+
+  .select-wrapper .select {
+    padding: 12px 15px 12px 5px;
+  }
+
+  .mural-width {
+    margin-right: 0;
+    display:block;
+  }
+
+  .mural-width input {
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .mural-width select {
+    text-align: right;
+   
+  }
+
+  .team .doart-center-header .col-lg-4.text-end {
+    text-align: left !important;
+  }
+
+  .team .doart-center-header .col-lg-8 p {
+    margin-bottom: 10px;
+  }
+
+  .team.team-table {
+    margin-bottom: 20px;
+  }
+
+  .inspiration .input-first, .frame-box, .team-member-activity h2 {
+    margin-bottom: 20px;
+  }
+
+  .member-activity-data.mb-0 {
+    margin-bottom: 30px !important;
+  }
+
+  .frame-box .d-flex, .mural-size-box .d-inline-block {
+    display: block !important;
+  }
+
+  .frame-box img {
+    width: 100%;
+  }
+
+  .small-image-inspiration, .project-activity-header p, .billing .doart-center-header p {
+    margin-bottom: 20px;
+  }
+
+  .wooden-paper .golden-background-button {
+    margin-top: 10px;
+  }
+
+  .billing .earning-section, .wooden-paper .row .col-12 {
+    margin-bottom: 10px;
+  }
+
+  .project-activity-header .text-end, .creative-brief .text-end, .team-member-activity .text-end {
+    text-align: left !important;
+  }
+
+  .member-activity-data {
+    padding: 20px 20px 0 20px;
+  }
+
+
+  .creative-brief .design-custom-work, .creative-brief .specification, .member-activity-data .team-member {
+    margin-bottom: 20px;
+  }
+
+  .creative-brief .row.pb-5 {
+    padding-bottom: 0 !important;
+  }
+
+  .earning-box {
+    margin-bottom: 20px;
+  }
+
+  .form-check-input {
+    width: 2em;
+  }
+
+  .jaguar-color-box {
+    padding: 20px;
+  }
+
+  .jaguar-name {
+    padding: 10px;
+  }
+
+  .jaguar-box {
+    margin-bottom: 20px;
+  }
+
+  .approved-input {
+    margin-right: 10px;
+  }
+
+  .inspiration input {
+    padding: 10px 0 10px 10px;
+  }
+
+  .green-background-button {
+    padding: 9px 22px;
+  }
+  .sketch .media-upload-container{
+    padding:30px;
+  }
+  .metal-print-box{
+    margin-bottom: 20px;
+  }
+  .custom-pagination .pagination {
+    float: left;
+  }
+  #AddProject .modal-dialog{
+    max-width: 90%;
+    width: 100%;
+  }
+  /*deliverable*/
+  .accordion-body {
+    padding: 0;
+  }
+
+  .accordion-header {
+    padding: 10px;
+  }
+
+  .accordion-button h4, .accordion-body h4, .accordion-button {
+    font-size: 14px;
+  }
+
+  .accordion-button span, .accordion-body span {
+    font-size: 12px;
+  }
+
+  .offer-select {
+    flex-wrap: wrap;
+  }
+
+  .revision-charge, .eta-days {
+    margin-bottom: 20px;
+  }
+
+  .wooden-hr {
+    margin: 15px 0;
+  }
+  .revision-charge input, .eta-days input {
+    width: 100%;
+  }
+  .inbox-content p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  /*deliverable end*/
+}
+
+/* ****************************************************** Project Page End****************************************************************** */
